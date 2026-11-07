@@ -1,0 +1,119 @@
+
+{
+    "personalInfo": {
+        "name": "Amulya shetty",
+        "title": "BCA Student & Web Developer",
+        "description": "I am a passionate BCA student interested in web development, programming and modern technologies. I enjoy creating creative and responsive websites.",
+        "profileImage": "https://www.bing.com/th/id/OIP.OCtiaAKnj4LGwJmo7UyM6gHaHa?w=152&h=146&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2",
+        "aboutImage": "https://www.bing.com/th/id/OIP.OCtiaAKnj4LGwJmo7UyM6gHaHa?w=152&h=146&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2",
+        "email": "amulyashetty026@gmail.com",
+        "phone": "+91 9902659552",
+        "location": "Dharwad,Karnataka, India",
+        "birthDate": "01 February 2008",
+        "degree": "Bachelor of Computer Applications",
+        "college": "Kle P C Jabbin",
+        "resumeUrl": "assets/resume.pdf"
+    },
+
+    "about": {
+        "description": "Hello! I am a first-year BCA student with a strong interest in computer science and web development. I am learning HTML, CSS, JavaScript and Bootstrap. My goal is to become a skilled full-stack developer and build useful digital experiences.",
+        "skills": "HTML, CSS, JavaScript, Bootstrap",
+        "interests": "Coding, Technology, Designing, Learning"
+    },
+
+    "skills": [
+        {
+            "name": "HTML5",
+            "icon": "bi-filetype-html",
+            "level": 90
+        },
+        {
+            "name": "CSS3",
+            "icon": "bi-filetype-css",
+            "level": 85
+        },
+        {
+            "name": "JavaScript",
+            "icon": "bi-filetype-js",
+            "level": 70
+        },
+        {
+            "name": "Bootstrap 5",
+            "icon": "bi-bootstrap",
+            "level": 85
+        },
+        {
+            "name": "C Programming",
+            "icon": "bi-code-slash",
+            "level": 75
+        },
+        {
+            "name": "Python",
+            "icon": "bi-filetype-py",
+            "level": 65
+        }
+    ],
+
+    "projects": [
+        {
+            "title": "Personal Portfolio Website",
+            "description": "A modern and responsive personal portfolio website created to showcase my profile, skills, education and projects.",
+            "image": "https://placehold.co/600x350/1e3a8a/ffffff?text=Portfolio+Website",
+            "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+            "link": "#"
+        },
+        {
+            "title": "Student Management System",
+            "description": "A basic student management project designed to organize student information and academic records.",
+            "image": "https://placehold.co/600x350/1d4ed8/ffffff?text=Student+Management",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "link": "#"
+        },
+        {
+            "title": "Calculator Application",
+            "description": "A simple and user-friendly calculator application that performs basic mathematical operations.",
+            "image": "https://placehold.co/600x350/312e81/ffffff?text=Calculator",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "link": "#"
+        }
+    ],
+
+    "education": [
+        {
+            "degree": "Bachelor of Computer Applications (BCA)",
+            "institution": "Your College Name",
+            "year": "2026 - Present",
+            "description": "Currently pursuing BCA and learning programming, computer fundamentals and web development."
+        },
+        {
+            "degree": "Higher Secondary Education (12th)",
+            "institution": "Your School Name",
+            "year": "2024 - 2026",
+            "description": "Completed higher secondary education."
+        },
+        {
+            "degree": "Secondary Education (10th)",
+            "institution": "Your School Name",
+            "year": "2024",
+            "description": "Completed secondary school education."
+        }
+    ],
+
+    "socialLinks": [
+        {
+            "platform": "GitHub",
+            "icon": "bi-github",
+            "url": "https://github.com/"
+        },
+        {
+            "platform": "LinkedIn",
+            "icon": "bi-linkedin",
+            "url": "https://linkedin.com/"
+        },
+        {
+            "platform": "Instagram",
+            "icon": "bi-instagram",
+            "url": "https://instagram.com/"
+        }
+    ]
+}

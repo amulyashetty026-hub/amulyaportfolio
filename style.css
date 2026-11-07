@@ -1,0 +1,649 @@
+
+/* ==========================================
+   1. GLOBAL STYLING & COLOUR VARIABLES
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Minimal colour palette */
+
+    --primary: #404040;
+    --secondary: #737373;
+    --dark: #171717;
+    --light: #f5f5f5;
+    --white: #ffffff;
+    --text: #737373;
+
+    /* Extra colours */
+
+    --border: #e5e5e5;
+    --hover: #262626;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.light-section {
+    background: var(--light);
+}
+
+
+/* ==========================================
+   2. NAVBAR
+========================================== */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: -1px;
+}
+
+.navbar-brand span {
+    color: var(--secondary);
+}
+
+.nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--border);
+    box-shadow: none !important;
+}
+
+
+/* ==========================================
+   3. HERO / HOME SECTION
+========================================== */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 130px 0 80px;
+    background: var(--white);
+}
+
+.welcome-text {
+    color: var(--secondary);
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero-content h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 800;
+    margin: 15px 0;
+    color: var(--dark);
+    letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+    color: var(--secondary);
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome-text) {
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* ==========================================
+   4. BUTTONS
+========================================== */
+
+.btn-primary-custom {
+    background: var(--dark);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid var(--dark);
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background: var(--hover);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.btn-outline-custom {
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background: var(--dark);
+    color: var(--white);
+}
+
+
+/* ==========================================
+   5. PROFILE IMAGE
+========================================== */
+
+.profile-container {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    background: #eeeeee;
+    animation: float 4s ease-in-out infinite;
+}
+
+.profile-image {
+    width: 320px;
+    height: 320px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+}
+
+@keyframes float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* ==========================================
+   6. SOCIAL MEDIA LINKS
+========================================== */
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    color: var(--dark);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--dark);
+    color: var(--white);
+    transform: translateY(-4px);
+}
+
+
+/* ==========================================
+   7. SECTION HEADINGS
+========================================== */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    color: var(--secondary);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: -1px;
+}
+
+.section-heading h2 span {
+    color: var(--secondary);
+}
+
+
+/* ==========================================
+   8. ABOUT SECTION
+========================================== */
+
+.about-image {
+    width: 100%;
+    max-width: 380px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 8px 8px 0 #eeeeee;
+}
+
+#about h3 {
+    font-weight: 750;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+#about p {
+    color: var(--text);
+    line-height: 1.9;
+}
+
+.about-details {
+    margin-top: 20px;
+}
+
+.about-detail {
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.about-detail strong {
+    color: var(--dark);
+}
+
+
+/* ==========================================
+   9. SKILLS SECTION
+========================================== */
+
+.skill-card {
+    background: var(--white);
+    padding: 35px 20px;
+    border-radius: 8px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid var(--border);
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #bdbdbd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.skill-icon {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.skill-card h5 {
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 7px;
+    border-radius: 20px;
+    background: #e5e5e5;
+}
+
+.progress-bar {
+    background: #404040;
+    border-radius: 20px;
+}
+
+
+/* ==========================================
+   10. PROJECT SECTION
+========================================== */
+
+.project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #bdbdbd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h4 {
+    font-size: 21px;
+    font-weight: 750;
+    color: var(--dark);
+}
+
+.project-content p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tech-badge {
+    background: #f0f0f0;
+    color: #404040;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.project-link {
+    color: var(--dark);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    color: var(--secondary);
+}
+
+
+/* ==========================================
+   11. EDUCATION SECTION
+========================================== */
+
+.timeline {
+    max-width: 750px;
+    margin: auto;
+    border-left: 2px solid #d4d4d4;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    background: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: none;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -41px;
+    top: 30px;
+    width: 18px;
+    height: 18px;
+    background: var(--dark);
+    border: 4px solid var(--white);
+    border-radius: 50%;
+}
+
+.timeline-item h4 {
+    font-weight: 750;
+    color: var(--dark);
+}
+
+.timeline-item h6 {
+    color: var(--primary);
+}
+
+.timeline-item p {
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.education-year {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   12. CONTACT SECTION
+========================================== */
+
+.contact-info {
+    background: var(--dark);
+    color: var(--white);
+    height: 100%;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    font-weight: 750;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #bdbdbd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    color: #d4d4d4;
+    font-size: 24px;
+}
+
+.contact-item h6 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.contact-item p {
+    color: #bdbdbd;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-form {
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.form-control {
+    padding: 13px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    color: var(--dark);
+}
+
+.form-control:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-control::placeholder {
+    color: #a3a3a3;
+}
+
+
+/* ==========================================
+   13. FOOTER
+========================================== */
+
+.footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 40px 0 20px;
+}
+
+.footer h4 {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.footer h4 span {
+    color: #a3a3a3;
+}
+
+.footer p {
+    color: #bdbdbd;
+    margin-top: 15px;
+}
+
+.copyright {
+    border-top: 1px solid #404040;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   14. RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-content > p:not(.welcome-text) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .social-links {
+        justify-content: center;
+    }
+
+    .section-padding {
+        padding: 75px 0;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .about-image {
+        height: 320px;
+    }
+
+}
